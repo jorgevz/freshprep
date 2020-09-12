@@ -14,7 +14,7 @@ return(
     className="slide-images"
       src={weeklyprep}
       alt= "first slide"
-      class = "img-responsive"  />
+      class = "col-sm-12"  />
       
     <Carousel.Caption>
       <h3>First slide label</h3>
@@ -27,7 +27,8 @@ return(
     className="slide-images"
       src={chef}
       alt="second slide"
-      class = "img-responsive"
+      class = "col-sm-12"
+     
     />
 
     <Carousel.Caption>
@@ -40,7 +41,7 @@ return(
     className="slide-images"
       src={delivery}
       alt="Third slide"
-      class = "img-responsive"
+      class = "col-sm-12"
     />
 
     <Carousel.Caption>
