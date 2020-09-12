@@ -1,18 +1,21 @@
 import React from 'react';
-import logo from '../images/Fresh-Co.svg';
 import {Carousel} from 'react-bootstrap';
+import weeklyprep from '../images/weeklyprep.jpg';
+import chef from '../images/chef.jpg'
+import delivery from '../images/delivery.jpg';
 
 
 function Home (){
 return(
 <div>
-<Carousel>
+<Carousel className = "carousel">
   <Carousel.Item>
     <img
     className="slide-images"
-      src="https://i.pinimg.com/originals/b0/3a/f9/b03af9e72d17b8a6498c806f7e5acca9.jpg"
-      alt="First slide"
-    />
+      src={weeklyprep}
+      alt= "first slide"
+      class = "img-responsive"  />
+      
     <Carousel.Caption>
       <h3>First slide label</h3>
       <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -22,8 +25,9 @@ return(
   <Carousel.Item>
     <img
     className="slide-images"
-      src="https://umbrella.data.naturalint.com/production/articles/uploads/photo/4c587556-d05d-4361-b3fd-6b144a03ed0b%20(1).20190116113344.jpg"
-      alt="Third slide"
+      src={chef}
+      alt="second slide"
+      class = "img-responsive"
     />
 
     <Carousel.Caption>
@@ -34,8 +38,9 @@ return(
   <Carousel.Item>
     <img
     className="slide-images"
-      src="https://www.cookingclassy.com/wp-content/uploads/2019/05/acai-bowl-23.jpg"
+      src={delivery}
       alt="Third slide"
+      class = "img-responsive"
     />
 
     <Carousel.Caption>
