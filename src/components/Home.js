@@ -9,6 +9,7 @@ return(
 <Carousel>
   <Carousel.Item>
     <img
+    className="slide-images"
       src="https://i.pinimg.com/originals/b0/3a/f9/b03af9e72d17b8a6498c806f7e5acca9.jpg"
       alt="First slide"
     />
@@ -20,6 +21,7 @@ return(
 
   <Carousel.Item>
     <img
+    className="slide-images"
       src="https://umbrella.data.naturalint.com/production/articles/uploads/photo/4c587556-d05d-4361-b3fd-6b144a03ed0b%20(1).20190116113344.jpg"
       alt="Third slide"
     />
@@ -31,7 +33,7 @@ return(
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-100"
+    className="slide-images"
       src="https://www.cookingclassy.com/wp-content/uploads/2019/05/acai-bowl-23.jpg"
       alt="Third slide"
     />

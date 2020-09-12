@@ -11,6 +11,8 @@ import {
   import {Nav} from 'react-bootstrap';
 import Home from './components/Home';
 import Menu from './components/Menu';
+import MealPlans from './components/MealPlans';
+import FAQs from './components/FAQs';
   
   
   
@@ -28,13 +30,13 @@ function App() {
     <Nav.Link to="/home"> <Link className="nav-link" to="/home">Home</Link> </Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link eventKey="/menu"> <Link className="nav-link"   to="/">Menu</Link> </Nav.Link>
+    <Nav.Link eventKey="/menu"> <Link className="nav-link"   to="/menu">Menu</Link> </Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link eventKey="Meanl plans">Meal Plans</Nav.Link>
+    <Nav.Link eventKey="Meanl plans"> <Link className="nav-link"   to="/Mealplans">Meal-plans</Link> </Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link eventKey="FAQs">FAQs</Nav.Link>
+    <Nav.Link eventKey="FAQs"> <Link className="nav-link"   to="/faqs">FAQs</Link> </Nav.Link>
   </Nav.Item>
   
 </Nav>
@@ -43,6 +45,8 @@ function App() {
 
       <Route exact path='/home' component={Home}/>
       <Route path='/menu' component={Menu}/>
+      <Route path='/Mealplans' component={MealPlans}/>
+      <Route path='/faqs' component={FAQs}/>
 
       </Switch>
     
