@@ -8,6 +8,8 @@ import delivery from '../images/delivery.jpg';
 function Home (){
 return(
 <div>
+
+<div>
 <Carousel className = "carousel">
   <Carousel.Item>
     <img
@@ -50,8 +52,19 @@ return(
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
+</div> 
+
+
+<div>
+
 
 </div>
+
+</div>
+
+
+
+
 );
 }
 
