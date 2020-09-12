@@ -17,11 +17,10 @@ return(
       <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
     </Carousel.Caption>
   </Carousel.Item>
-  
+
   <Carousel.Item>
     <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=Second slide&bg=282c34"
+      src="https://umbrella.data.naturalint.com/production/articles/uploads/photo/4c587556-d05d-4361-b3fd-6b144a03ed0b%20(1).20190116113344.jpg"
       alt="Third slide"
     />
 
@@ -33,7 +32,7 @@ return(
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=Third slide&bg=20232a"
+      src="https://www.cookingclassy.com/wp-content/uploads/2019/05/acai-bowl-23.jpg"
       alt="Third slide"
     />
 
