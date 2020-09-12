@@ -15,8 +15,8 @@ return(
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>choose your meal every week</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3>Choose your meal every week</h3>
+      <p>You can choose from our different varieties of meals.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
