@@ -1,7 +1,5 @@
 import React from 'react';
 import './App.css';
-import {Nav} from 'react-bootstrap';
-import Home from './components/Home';
 import logo from './images/logo.png';
 import {
   BrowserRouter as Router,
@@ -10,24 +8,27 @@ import {
   Link,
   Redirect
   } from 'react-router-dom'
-  
+  import {Nav} from 'react-bootstrap';
+import Home from './components/Home';
+import Menu from './components/Menu';
   
   
   
 
 function App() {
     return(
-      <div>
       <Router>
+      <div>
+    
       <Nav id="my-nav">
   <Nav.Item>
-  <Nav.Link eventKey="home" id="my-logo">FreshPrep</Nav.Link>
+  <Nav.Link to="/home" id="my-logo"> <Link className="nav-link" to="/home">Freshprep</Link> </Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link eventKey="home">Home</Nav.Link>
+    <Nav.Link to="/home"> <Link className="nav-link" to="/home">Home</Link> </Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link eventKey="menu">Menu</Nav.Link>
+    <Nav.Link eventKey="/menu"> <Link className="nav-link"   to="/">Menu</Link> </Nav.Link>
   </Nav.Item>
   <Nav.Item>
     <Nav.Link eventKey="Meanl plans">Meal Plans</Nav.Link>
@@ -39,14 +40,16 @@ function App() {
 </Nav>
       <Switch>
       
+
       <Route exact path='/home' component={Home}/>
-     
-      
+      <Route path='/menu' component={Menu}/>
+
       </Switch>
-      
     
+      </div>
      </Router>
-    </div>
+     
+    
   );
 }
 

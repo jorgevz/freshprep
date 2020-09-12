@@ -9,8 +9,7 @@ return(
 <Carousel>
   <Carousel.Item>
     <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=First slide&bg=373940"
+      src="https://i.pinimg.com/originals/b0/3a/f9/b03af9e72d17b8a6498c806f7e5acca9.jpg"
       alt="First slide"
     />
     <Carousel.Caption>
@@ -18,6 +17,7 @@ return(
       <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
     </Carousel.Caption>
   </Carousel.Item>
+  
   <Carousel.Item>
     <img
       className="d-block w-100"
