@@ -23,8 +23,8 @@ return(
       class = "col-sm-12"  />
       
     <Carousel.Caption id="carousel">
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3>Choose your meal every week</h3>
+      <h2>Here at FreshPrep you have the meal variety you need for your busy week</h2>
     </Carousel.Caption>
   </Carousel.Item>
 
@@ -38,9 +38,10 @@ return(
     />
 
     <Carousel.Caption id="carousel1">
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h4>Second slide label</h4>
+      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
     </Carousel.Caption>
+
   </Carousel.Item>
   <Carousel.Item>
     <img
@@ -51,21 +52,23 @@ return(
     />
 
     <Carousel.Caption id="carousel2">
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h4>Third slide label</h4>
+      <h2>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</h2>
     </Carousel.Caption>
+
   </Carousel.Item>
 </Carousel>
 </div> 
 
-<br/>
+
 <br/>
 
 <div id='second-div'>
 
-<h3 id='eat-fresh'>Eat fresh with us !</h3>
+
 <br/>
 <Form inline>
+<h3 id='eat-fresh'>Eat fresh with us !</h3>
   <Form.Label htmlFor="inlineFormInputName2" srOnly>
     Email
   </Form.Label>
@@ -98,6 +101,7 @@ return(
 </div>
 
 </div>
+
 </div>
 
 

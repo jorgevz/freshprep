@@ -14,25 +14,36 @@ font-family: Noto Sans JP;
 }
 
 #carousel{
-color: green;
+color: black;
 font-family: Noto Sans JP;
-font-weight: bold;
+font-weight: bolder;
+font-size: xxx-large;
+border-radius: 10%;
+background-color: whitesmoke;
 }
 
 #carousel1{
-color: green;
-font-weight: bold;
+color: black;
+font-weight: bolder;
 font-family: Noto Sans JP;
+border-radius: 10%;
+font-size: xxx-large;
+background-color: whitesmoke;
 }
 
 #carousel2{
-color: green;
-font-weight: bold;
+color:  black;
+background-color: whitesmoke;
+font-weight: bolder;
+font-size: xxx-large;
+border-radius: 10%;
 font-family: Noto Sans JP;
 }
 
 #second-div{
-margin-left: 35%;
+
+
+width: 100%;
 
 }
 
