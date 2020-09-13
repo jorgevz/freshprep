@@ -25,9 +25,7 @@ import FAQs from '../components/FAQs';
       
         <Nav id="my-nav">
     <Nav.Item>
-    <Nav.Link to="/home" id="my-logo"> <Link className="nav-link" to="/home">Freshprep 🥕
-    
-    <br/> Eat natural, on the go</Link> </Nav.Link>
+    <Nav.Link to="/home" id="my-logo"> <Link className="nav-link" to="/home">Freshprep 🥕</Link> </Nav.Link>
     </Nav.Item>
     <Nav.Item>
       <Nav.Link to="/home"> <Link className="nav-link" to="/home">Home</Link> </Nav.Link>

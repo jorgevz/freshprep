@@ -1,12 +1,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 #my-logo{
 font-family: Caveat;
 font-weight: bold;
-font-size: medium;
+font-size: x-large;
 color: rgb(144, 252, 225);
 }
+
+#eat-fresh{
+font-family: Noto Sans JP;
+}
+
+#second-div{
+margin-left: 35%;
+
+}
+
 
 

@@ -61,8 +61,10 @@ return(
 <br/>
 <br/>
 
-<div>
+<div id='second-div'>
 
+<h3 id='eat-fresh'>Eat fresh with us !</h3>
+<br/>
 <Form inline>
   <Form.Label htmlFor="inlineFormInputName2" srOnly>
     Email
@@ -72,6 +74,7 @@ return(
     id="inlineFormInputName2"
     placeholder="Email"
   />
+
   <Form.Label htmlFor="inlineFormInputGroupUsername2" srOnly>
     
   </Form.Label>
@@ -87,6 +90,12 @@ return(
   </Button>
 </Form>
 
+<br/>
+<br/>
+
+<div>
+
+</div>
 
 </div>
 </div>
