@@ -7,6 +7,8 @@ import {Button} from 'react-bootstrap';
 import weeklyprep from '../images/weeklyprep.jpg';
 import chef from '../images/chef.jpg'
 import delivery from '../images/delivery.jpg';
+import mission from '../images/mission.jpg';
+
 
 
 function Home (){
@@ -23,7 +25,7 @@ return(
       class = "col-sm-12"  />
       
     <Carousel.Caption id="carousel">
-      <h3>Choose your meal every week</h3>
+      <h4>Choose your meals every week</h4>
       <h2>Here at FreshPrep you have the meal variety you need for your busy week</h2>
     </Carousel.Caption>
   </Carousel.Item>
@@ -38,8 +40,8 @@ return(
     />
 
     <Carousel.Caption id="carousel1">
-      <h4>Second slide label</h4>
-      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+      <h4>Our Top-Notch Chefs cook & Prep</h4>
+      <h2>Our chefs are experts with organic food, your organic meals are a guarantee here at FreshPrep.</h2>
     </Carousel.Caption>
 
   </Carousel.Item>
@@ -52,8 +54,8 @@ return(
     />
 
     <Carousel.Caption id="carousel2">
-      <h4>Third slide label</h4>
-      <h2>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</h2>
+      <h4>We Prep & Deliver, you eat</h4>
+      <h2>From the comfort of your home obtain your healthy meals.No commitment, cancel anytime.</h2>
     </Carousel.Caption>
 
   </Carousel.Item>
@@ -68,7 +70,7 @@ return(
 
 <br/>
 <Form inline>
-<h3 id='eat-fresh'>Eat fresh with us !</h3>
+<h3 id='eat-fresh'>Starting eating fresh !</h3>
   <Form.Label htmlFor="inlineFormInputName2" srOnly>
     Email
   </Form.Label>
@@ -96,7 +98,18 @@ return(
 <br/>
 <br/>
 
-<div>
+
+<div class="card">
+  <h5 class="card-header">FreshPrep's mission</h5>
+  <div class="card-body">
+  <img src = {mission} alt="mission-img"
+  class = "col-sm-12" /> <a href="faqs" class="btn btn-primary">Learn More</a> 
+    <h5 class="card-title">Everyone should be able to eat Healthy</h5>
+    <p class="card-text">At FreshPrep we believe in eating natural and that everyone should afford it
+     ! that is why we are on a mission to feeding you naturally at low cost with effectiveness.</p>
+    
+  </div>
+
 
 </div>
 
