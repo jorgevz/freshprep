@@ -4,6 +4,7 @@ import {Form} from 'react-bootstrap';
 import {InputGroup} from 'react-bootstrap';
 import {FormControl} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
+import {Jumbotron} from 'react-bootstrap';
 import weeklyprep from '../images/weeklyprep.jpg';
 import chef from '../images/chef.jpg'
 import delivery from '../images/delivery.jpg';
@@ -15,7 +16,6 @@ function Home (){
 return(
 <div>
 
-<div>
 <Carousel>
   <Carousel.Item className="text">
     <img
@@ -63,8 +63,6 @@ return(
 
   </Carousel.Item>
 </Carousel>
-</div> 
-
 
 
 
@@ -98,20 +96,16 @@ return(
 </Form>
 
 
-
- <div id='img-div'>
-
-
-
-
-  
-  
-  // <a href="faqs" class="btn btn-primary">Learn More</a> 
-   
-  </div>
-
-  // At FreshPrep we believe in eating natural and that everyone should afford it
-  // ! that is why we are on a mission to feeding you naturally at low cost with effectiveness
+<Jumbotron>
+  <h1>Hello, world!</h1>
+  <p>
+    This is a simple hero unit, a simple jumbotron-style component for calling
+    extra attention to featured content or information.
+  </p>
+  <p>
+    <Button variant="primary">Learn more</Button>
+  </p>
+</Jumbotron>
 
 </div>
 

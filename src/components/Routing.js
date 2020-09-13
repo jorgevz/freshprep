@@ -23,7 +23,7 @@ import FAQs from '../components/FAQs';
         <Router>
         <div>
       
-        <Nav id="my-nav">
+        <Nav class="navbar fixed-top navbar-light bg-light" id="my-nav">
     <Nav.Item>
     <Nav.Link to="/home" id="my-logo"> <Link className="nav-link" to="/home">Freshprep 🥕</Link> </Nav.Link>
     </Nav.Item>
