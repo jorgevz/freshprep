@@ -22,11 +22,11 @@ return(
     className="slide-images"
       src={weeklyprep}
       alt= "first slide"
-      class = "col-sm-12"  />
+      class = "col-sm-12" id='img1' />
       
     <Carousel.Caption id="carousel">
       <h4>Choose your meals every week</h4>
-      <h2>Here at FreshPrep you have the meal variety you need for your busy week</h2>
+      <h3>Here at FreshPrep you have the variety you need for your busy week</h3>
     </Carousel.Caption>
   </Carousel.Item>
 
@@ -36,13 +36,15 @@ return(
       src={chef}
       alt="second slide"
       class = "col-sm-12"
-     
+     id='img2'
     />
 
+    
     <Carousel.Caption id="carousel1">
       <h4>Our Top-Notch Chefs cook & Prep</h4>
-      <h2>Our chefs are experts with organic food, your organic meals are a guarantee here at FreshPrep.</h2>
+      <h3>Our chefs are experts with organic food, your organic meals are a guarantee here at FreshPrep.</h3>
     </Carousel.Caption>
+    
 
   </Carousel.Item>
   <Carousel.Item>
@@ -51,11 +53,12 @@ return(
       src={delivery}
       alt="Third slide"
       class = "col-sm-12"
+      id='img3'
     />
 
-    <Carousel.Caption id="carousel2">
+    <Carousel.Caption  id="carousel2">
       <h4>We Prep & Deliver, you eat</h4>
-      <h2>From the comfort of your home obtain your healthy meals.No commitment, cancel anytime.</h2>
+      <h3>From the comfort of your home obtain your healthy meals.No commitment, cancel anytime.</h3>
     </Carousel.Caption>
 
   </Carousel.Item>
@@ -63,14 +66,13 @@ return(
 </div> 
 
 
-<br/>
+
 
 <div id='second-div'>
 
 
-<br/>
-<Form inline>
-<h3 id='eat-fresh'>Starting eating fresh !</h3>
+<Form inline id='form1'>
+<h3 id='eat-fresh'></h3>
   <Form.Label htmlFor="inlineFormInputName2" srOnly>
     Email
   </Form.Label>
@@ -95,27 +97,27 @@ return(
   </Button>
 </Form>
 
-<br/>
-<br/>
 
 
-<div class="card">
-  <h5 class="card-header">FreshPrep's mission</h5>
-  <div class="card-body">
-  <img src = {mission} alt="mission-img"
-  class = "col-sm-12" /> <a href="faqs" class="btn btn-primary">Learn More</a> 
-    <h5 class="card-title">Everyone should be able to eat Healthy</h5>
-    <p class="card-text">At FreshPrep we believe in eating natural and that everyone should afford it
-     ! that is why we are on a mission to feeding you naturally at low cost with effectiveness.</p>
-    
+ <div id='img-div'>
+
+
+
+
+  
+  
+  // <a href="faqs" class="btn btn-primary">Learn More</a> 
+   
   </div>
 
+  // At FreshPrep we believe in eating natural and that everyone should afford it
+  // ! that is why we are on a mission to feeding you naturally at low cost with effectiveness
 
 </div>
 
 </div>
 
-</div>
+
 
 
 
