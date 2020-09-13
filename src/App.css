@@ -27,9 +27,7 @@ height: 200px;
 padding-left: 28%;
 }
 
-.nav-link{
-margin-left: 50px;
-}
+
 
 
 
@@ -51,6 +49,7 @@ background-color: white;
 
 #carousel2{
 color:  black;
+font-family: Noto Sans JP;
 font-weight: bolder;
 font-size: xxx-large;
 background-color: white;

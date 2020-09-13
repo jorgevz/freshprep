@@ -48,7 +48,7 @@ import Aboutus from './Aboutus';
         <Route path='/menu' component={Menu}/>
         <Route path='/Mealplans' component={MealPlans}/>
         <Route path='FAQs' component={Aboutus}/>
-  
+        
         </Switch>
       
         </div>

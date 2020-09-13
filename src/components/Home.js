@@ -90,7 +90,7 @@ return(
     <FormControl id="inlineFormInputGroupUsername2" placeholder="ex.10029" />
   </InputGroup>
 
-  <Button type="submit" className="mb-2">
+  <Button variant="success" type="submit" className="mb-2">
     Eat Natural ! 
   </Button>
 </Form>
@@ -103,10 +103,9 @@ return(
     that is why we are on a mission to feeding you naturally at low cost effectively.
   </p>
   <p>
-    <Button variant="primary">Learn more</Button>
+    <Button href="/aboutus" variant="info">Learn more</Button>
   </p>
 </Jumbotron>
-
 </div>
 
 </div>
