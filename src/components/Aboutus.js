@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function FAQs(){
+function Aboutus(){
 return(
 <div>
 <h1>hello world</h1>
@@ -9,4 +9,4 @@ return(
 )
 }
 
-export default FAQs;
+export default Aboutus;

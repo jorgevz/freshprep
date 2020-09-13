@@ -13,7 +13,7 @@ import {
   import chef from '../images/chef.jpg';
   import delivery from '../images/delivery.jpg';
   import weeklyprep from '../images/weeklyprep.jpg';
-import FAQs from '../components/FAQs';
+import Aboutus from './Aboutus';
     
     
     
@@ -37,7 +37,7 @@ import FAQs from '../components/FAQs';
       <Nav.Link eventKey="Meanl plans"> <Link className="nav-link"   to="/Mealplans">Meal-plans</Link> </Nav.Link>
     </Nav.Item>
     <Nav.Item>
-      <Nav.Link eventKey="FAQs"> <Link className="nav-link"   to="/faqs">FAQs</Link> </Nav.Link>
+      <Nav.Link eventKey="aboutus"> <Link className="nav-link"   to="/aboutus">About us</Link> </Nav.Link>
     </Nav.Item>
     
   </Nav>
@@ -47,7 +47,7 @@ import FAQs from '../components/FAQs';
         <Route exact path='/home' component={Home}/>
         <Route path='/menu' component={Menu}/>
         <Route path='/Mealplans' component={MealPlans}/>
-        <Route path='FAQs' component={FAQs}/>
+        <Route path='FAQs' component={Aboutus}/>
   
         </Switch>
       
