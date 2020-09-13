@@ -13,6 +13,24 @@ color: rgb(144, 252, 225);
 font-family: Noto Sans JP;
 }
 
+#carousel{
+color: green;
+font-family: Noto Sans JP;
+font-weight: bold;
+}
+
+#carousel1{
+color: green;
+font-weight: bold;
+font-family: Noto Sans JP;
+}
+
+#carousel2{
+color: green;
+font-weight: bold;
+font-family: Noto Sans JP;
+}
+
 #second-div{
 margin-left: 35%;
 

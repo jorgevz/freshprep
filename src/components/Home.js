@@ -14,15 +14,15 @@ return(
 <div>
 
 <div>
-<Carousel className = "carousel">
-  <Carousel.Item>
+<Carousel>
+  <Carousel.Item className="text">
     <img
     className="slide-images"
       src={weeklyprep}
       alt= "first slide"
       class = "col-sm-12"  />
       
-    <Carousel.Caption>
+    <Carousel.Caption id="carousel">
       <h3>First slide label</h3>
       <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
     </Carousel.Caption>
@@ -37,7 +37,7 @@ return(
      
     />
 
-    <Carousel.Caption>
+    <Carousel.Caption id="carousel1">
       <h3>Second slide label</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </Carousel.Caption>
@@ -50,7 +50,7 @@ return(
       class = "col-sm-12"
     />
 
-    <Carousel.Caption>
+    <Carousel.Caption id="carousel2">
       <h3>Third slide label</h3>
       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
     </Carousel.Caption>
