@@ -56,4 +56,9 @@ font-size: xxx-large;
 background-color: white;
 }
 
-
+#jumbotron{
+text-align: center;
+font-family: Noto Sans JP;
+font: bold;
+font-size: x-large;
+}

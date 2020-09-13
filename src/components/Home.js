@@ -96,11 +96,11 @@ return(
 </Form>
 
 
-<Jumbotron>
-  <h1>Hello, world!</h1>
+<Jumbotron id='jumbotron'>
+  <h1>Our mission</h1>
   <p>
-    This is a simple hero unit, a simple jumbotron-style component for calling
-    extra attention to featured content or information.
+    At FreshPrep we believe in eating natural, and that everyone should afford it ! 
+    that is why we are on a mission to feeding you naturally at low cost effectively.
   </p>
   <p>
     <Button variant="primary">Learn more</Button>
