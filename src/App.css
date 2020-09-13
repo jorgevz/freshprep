@@ -13,6 +13,9 @@ color: rgb(144, 252, 225);
 font-family: Noto Sans JP;
 }
 
+.nav-link{
+margin-left: 50px;
+}
 
 
 #carousel{
