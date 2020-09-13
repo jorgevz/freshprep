@@ -1,5 +1,9 @@
 import React from 'react';
 import {Carousel} from 'react-bootstrap';
+import {Form} from 'react-bootstrap';
+import {InputGroup} from 'react-bootstrap';
+import {FormControl} from 'react-bootstrap';
+import {Button} from 'react-bootstrap';
 import weeklyprep from '../images/weeklyprep.jpg';
 import chef from '../images/chef.jpg'
 import delivery from '../images/delivery.jpg';
@@ -54,13 +58,40 @@ return(
 </Carousel>
 </div> 
 
+<br/>
+<br/>
 
 <div>
 
+<Form inline>
+  <Form.Label htmlFor="inlineFormInputName2" srOnly>
+    Email
+  </Form.Label>
+  <Form.Control
+    className="mb-2 mr-sm-2"
+    id="inlineFormInputName2"
+    placeholder="Email"
+  />
+  <Form.Label htmlFor="inlineFormInputGroupUsername2" srOnly>
+    
+  </Form.Label>
+  <InputGroup className="mb-2 mr-sm-2">
+    <InputGroup.Prepend>
+      <InputGroup.Text>Zip code</InputGroup.Text>
+    </InputGroup.Prepend>
+    <FormControl id="inlineFormInputGroupUsername2" placeholder="ex.10029" />
+  </InputGroup>
+
+  <Button type="submit" className="mb-2">
+    Eat Natural ! 
+  </Button>
+</Form>
+
 
 </div>
-
 </div>
+
+
 
 
 

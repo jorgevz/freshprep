@@ -1,9 +1,12 @@
 
-#my-nav{
-border-radius: 30%;
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
+
+#my-logo{
+font-family: Caveat;
+font-weight: bold;
+font-size: medium;
+color: rgb(144, 252, 225);
 }
 
-.carousel{
-    width: 100%;
-}
+
