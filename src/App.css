@@ -3,11 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 
+
+#nav-bar{
+display: flex;
+position: sticky;
+}
+
 #my-logo{
 font-family: Caveat;
 font-weight: bold;
 font-size: x-large;
-color: rgb(144, 252, 225);
+color: teal;
+text-decoration: none;
 }
 
 #first-division{
