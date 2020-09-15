@@ -8,7 +8,6 @@ import {Jumbotron} from 'react-bootstrap';
 import weeklyprep from '../images/weeklyprep.jpg';
 import chef from '../images/chef.jpg'
 import delivery from '../images/delivery.jpg';
-import mission from '../images/mission.jpg';
 
 
 
@@ -23,7 +22,9 @@ return(
       src={weeklyprep}
       alt= "first slide"
       class = "col-sm-12" id='img1' />
-      
+      <br/>
+      <br/>
+      <br/>
     <Carousel.Caption id="carousel">
       <h4>Choose your meals every week</h4>
       <h3>Here at FreshPrep you have the variety you need for your busy week</h3>
@@ -38,7 +39,9 @@ return(
       class = "col-sm-12"
      id='img2'
     />
-
+    <br/>
+    <br/>
+    <br/>
     
     <Carousel.Caption id="carousel1">
       <h4>Our Top-Notch Chefs cook & Prep</h4>
@@ -55,7 +58,9 @@ return(
       class = "col-sm-12"
       id='img3'
     />
-
+    <br/>
+    <br/>
+    <br/>
     <Carousel.Caption  id="carousel2">
       <h4>We Prep & Deliver, you eat</h4>
       <h3>From the comfort of your home obtain your healthy meals.No commitment, cancel anytime.</h3>
@@ -70,7 +75,7 @@ return(
 
 
 <Form inline id='form1'>
-<h3 id='eat-fresh'></h3>
+
   <Form.Label htmlFor="inlineFormInputName2" srOnly>
     Email
   </Form.Label>

@@ -4,15 +4,11 @@ import {
     Switch,
     Route,
     Link,
-    Redirect
     } from 'react-router-dom'
-    import {Nav, NavItem,NavLink} from 'react-bootstrap';
+    import {Nav} from 'react-bootstrap';
   import Home from '../components/Home';
   import Menu from '../components/Menu';
   import MealPlans from '../components/MealPlans';
-  import chef from '../images/chef.jpg';
-  import delivery from '../images/delivery.jpg';
-  import weeklyprep from '../images/weeklyprep.jpg';
 import Aboutus from '../components/Aboutus';
     
     
@@ -23,16 +19,23 @@ import Aboutus from '../components/Aboutus';
       
 
         <Router>
+       
         <div>
-        <nav  id='nav-bar'>
+     
+        <Nav class="navbar fixed-top navbar-light bg-light">
   
-        <Link id='my-logo' to="/home">Freshprep 🥕</Link>
-        <Link to='/home'>Home</Link>
-        <Link to='/menu'>Menu</Link>
-        <Link to='/Mealplans'>Mealplans</Link>
-        <Link to='/aboutus'>About us</Link>
+        <Link id='my-logo' to="/home">Freshprep🥕</Link>
+
+       <ul id='nav-bar'>
+
+       <li><Link to='/home'>Home</Link></li>
+       <li><Link to='/menu'>Menu</Link></li>
+       <li> <Link to='/Mealplans'>Mealplans</Link></li>
+        <li><Link to='/aboutus'>About us</Link></li>
       
-        </nav>
+      </ul>
+
+        </Nav>
         
         <Switch>
         
