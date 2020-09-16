@@ -95,7 +95,7 @@ return(
     <FormControl id="inlineFormInputGroupUsername2" placeholder="ex.10029" />
   </InputGroup>
 
-  <Button variant="success" type="submit" className="mb-2">
+  <Button href="/Mealplans" variant="success" type="submit" className="mb-2">
     Eat Natural ! 
   </Button>
 </Form>

@@ -6,8 +6,8 @@ class Menu extends React.Component {
   constructor(props) {
   super(props)
   this.state = {
-    meals: []
-   
+    meals: [],
+    meals1: []
    };
     
 }
@@ -15,51 +15,48 @@ class Menu extends React.Component {
 
 async componentDidMount(){
 const url = "https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast";
+const url1 = "https://www.themealdb.com/api/json/v1/1/filter.php?a=italian";
 const res = await fetch(url);
+const res1 = await fetch(url1);
 const data = await res.json();
+const data1 = await res1.json();
 this.setState ({ meals: data.meals });
+
 
 }
 
 render() {
-  let meals = this.state.meals
-  console.log(meals)
-  let loaded = this.state.meals.length ? true : false
-  let rendermeals = ''
-    if (loaded ) {
-      
-    
-  rendermeals = this.state.meals.map (meals => { 
-    return (
-      <div >
   
-      <div >
-      Name:
-      {meals.strMeal}
-      </div>
-      
-      <div >
-      <image>
-      Picture:
-      {meals.strMealThumb}
-      </image>
-      </div>
-      
-    </div>
-    )
-  
-  }) 
-}
-  return (
+  return(  
     <div>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <p>Meal: {rendermeals}</p>
-    </div>
-  )
-  }
-}
+  
 
-export default Menu;
+ <div >
+
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ 
+ 
+ {this.state.meals.map(meals => (
+  
+  <div >
+
+  <div >
+  Meal:
+  {meals.strMeal}
+  </div>
+  <div id='breed-behavior'>
+  Demo:
+  <img src={meals.strMealThumb}/>
+  </div>
+  </div>
+ ))}
+  </div>
+  </div>
+  )
+}}
+
+
+export default Menu;  

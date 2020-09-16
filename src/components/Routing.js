@@ -10,7 +10,7 @@ import {
   import Menu from '../components/Menu';
   import MealPlans from '../components/MealPlans';
 import Aboutus from '../components/Aboutus';
-import Checkout from './Checkout';
+import Checkout from '../checkout/Checkout';
     
     
     

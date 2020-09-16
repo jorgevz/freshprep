@@ -2,6 +2,7 @@ import React from 'react';
 import {Jumbotron} from 'react-bootstrap';
 
 
+
 function Aboutus(){
 return(
 <div>
@@ -28,6 +29,7 @@ return(
   </p>
  
 </Jumbotron>
+
 
 
     </div>
