@@ -79,10 +79,59 @@ font-size: xxx-large;
 background-color: white;
 }
 
+
 #jumbotron{
+    text-align: center;
+    font-family: Noto Sans JP;
+    font: bold;
+    font-size: x-large;
+    background-color: #f8f7f4;
+    color: black;
+}
+
+#jumbotron1{
+    text-align: center;
+    font-family: Noto Sans JP;
+    font: bold;
+    font-size: x-large;
+    background-color: #f8f7f4;
+    color: black;
+    animation: first-article 2s ease-in-out 0s normal ;
+    }
+    
+    
+    @keyframes first-article {
+    0% {
+    background-color: #a28089;    
+    }
+    50%{
+    background-color: #a3f0f0;
+    }
+    
+    100%{
+    background-color:#f8f7f4 ;
+    }
+    }
+
+#jumbotron2{
 text-align: center;
 font-family: Noto Sans JP;
 font: bold;
 font-size: x-large;
 background-color: #f8f7f4;
+color: black;
+animation: second-article 2s ease-in-out 0s normal ;
 }
+
+@keyframes second-article {
+    0% {
+    background-color:  #a28089;    
+    }
+    50%{
+    background-color: #e49fb2;
+    }
+    
+    100%{
+    background-color:#f8f7f4 ;
+    }
+    }

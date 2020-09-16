@@ -10,6 +10,7 @@ import {
   import Menu from '../components/Menu';
   import MealPlans from '../components/MealPlans';
 import Aboutus from '../components/Aboutus';
+import Checkout from './Checkout';
     
     
     
@@ -43,7 +44,7 @@ import Aboutus from '../components/Aboutus';
         <Route path='/menu' component={Menu}/>
         <Route path='/Mealplans' component={MealPlans}/>
         <Route path='/aboutus' component={Aboutus}/>
-        
+        <Route path='/checkout' component={Checkout}/>
        
         
         </Switch>

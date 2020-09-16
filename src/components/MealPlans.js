@@ -13,8 +13,8 @@ return(
 
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-<h1 class="display-4">Pricing</h1>
-<p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+<h1 class="display-4">Choose your Meal plans below</h1>
+<p class="lead">Here at FreshPrep your satisfaction is our best reward, we are obssed with customer satisfaction.</p>
 </div>
 
 <div class="container">
@@ -25,13 +25,8 @@ return(
     </div>
     <div class="card-body">
       <h1 class="card-title pricing-card-title">$10.50 <small class="text-muted">/ meal</small></h1>
-      <ul class="list-unstyled mt-3 mb-4">
-        <li>10 users included</li>
-        <li>2 GB of storage</li>
-        <li>Email support</li>
-        <li>Help center access</li>
-      </ul>
-      <button  type="button" class="btn btn-lg btn-block btn-outline-info">Eat Fresh</button>
+      <h4>We care🍚</h4>
+      <button  type="button" class="btn btn-lg btn-block btn-outline-info">Subscribe</button>
     </div>
   </div>
   <div class="card mb-4 box-shadow">
@@ -40,13 +35,8 @@ return(
     </div>
     <div class="card-body">
       <h1 class="card-title pricing-card-title">$8.99 <small class="text-muted">/ meal</small></h1>
-      <ul class="list-unstyled mt-3 mb-4">
-        <li>20 users included</li>
-        <li>10 GB of storage</li>
-        <li>Priority email support</li>
-        <li>Help center access</li>
-      </ul>
-      <button  type="button" class="btn btn-lg btn-block btn-outline-info">Eat Healthy</button>
+      <h4>about your👨🏾‍🍳</h4>
+      <button  type="button" class="btn btn-lg btn-block btn-outline-info">Subscribe</button>
     </div>
   </div>
   <div class="card mb-4 box-shadow">
@@ -55,13 +45,8 @@ return(
     </div>
     <div class="card-body">
       <h1 class="card-title pricing-card-title">$7.99 <small class="text-muted">/ meal</small></h1>
-      <ul class="list-unstyled mt-3 mb-4">
-        <li>30 users included</li>
-        <li>15 GB of storage</li>
-        <li>Phone and email support</li>
-        <li>Help center access</li>
-      </ul>
-      <button   type="button" class="btn btn-lg btn-block btn-outline-info">On the go</button>
+      <h4>health❤️</h4>
+      <button   type="button" class="btn btn-lg btn-block btn-outline-info">Subscribe</button>
     </div>
   </div>
 </div>
