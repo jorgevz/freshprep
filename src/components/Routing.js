@@ -7,10 +7,13 @@ import {
     } from 'react-router-dom'
     import {Nav} from 'react-bootstrap';
   import Home from '../components/Home';
-  import Menu from '../components/Menu';
+  import Menu from '../Menus/Menu';
+  import MenuSelection from '../Menus/MenuSelection1';
   import MealPlans from '../components/MealPlans';
 import Aboutus from '../components/Aboutus';
 import Checkout from '../components/Checkout';
+import MenuSelection1 from '../Menus/MenuSelection1';
+import Thankyou from '../components/Thankyou'
     
     
     
@@ -42,10 +45,13 @@ import Checkout from '../components/Checkout';
         
         <Route exact path='/home' component={Home}/>
         <Route path='/menu' component={Menu}/>
+        <Route path='/menuselection1' component={MenuSelection1}/>
         <Route path='/Mealplans' component={MealPlans}/>
         <Route path='/aboutus' component={Aboutus}/>
         <Route path='/checkout' component={Checkout}/>
-       
+        <Route path='/thankyou' component={Thankyou}/>
+        
+        
         
         </Switch>
         

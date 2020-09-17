@@ -27,7 +27,7 @@ return(
       <br/>
     <Carousel.Caption id="carousel">
       <h4>Choose your meals every week</h4>
-      <h3>Here at FreshPrep you have the variety you need for your busy week</h3>
+      <h3>Here at FreshPrep you have the variety you need for your busy week.</h3>
     </Carousel.Caption>
   </Carousel.Item>
 
@@ -101,7 +101,7 @@ return(
 </Form>
 
 
-<Jumbotron id='jumbotron'>
+<Jumbotron className='jumbotronstyling'>
   <h1>Our mission</h1>
   <p>
     At FreshPrep we believe in eating natural, and that everyone should afford it ! 
