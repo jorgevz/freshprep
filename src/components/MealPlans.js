@@ -41,7 +41,7 @@ return(
     <div class="card-body">
       <h1 class="card-title pricing-card-title">{price2}<small class="text-muted">/ meal</small></h1>
       <h4>about your👨🏾‍🍳</h4>
-      <Button href="/Checkout" variant="info" type="button" class="btn btn-lg btn-block btn-outline-info">Purchase</Button>
+      <Button href="/MenuSelection2" variant="info" type="button" class="btn btn-lg btn-block btn-outline-info">Purchase</Button>
     </div>
   </div>
   <div class="card mb-4 box-shadow">
@@ -51,7 +51,7 @@ return(
     <div class="card-body">
       <h1 class="card-title pricing-card-title"> {price3} <small class="text-muted">/ meal</small></h1>
       <h4>health❤️</h4>
-      <Button href="/Checkout" variant="info" type="button" class="btn btn-lg btn-block btn-outline-info">Purchase</Button>
+      <Button href="/MenuSelection3" variant="info" type="button" class="btn btn-lg btn-block btn-outline-info">Purchase</Button>
     </div>
   </div>
 </div>

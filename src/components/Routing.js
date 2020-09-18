@@ -12,8 +12,12 @@ import {
   import MealPlans from '../components/MealPlans';
 import Aboutus from '../components/Aboutus';
 import Checkout from '../components/Checkout';
+import Checkout1 from '../components/Checkout1';
+import Checkout2 from '../components/Checkout2';
 import MenuSelection1 from '../Menus/MenuSelection1';
 import Thankyou from '../components/Thankyou';
+import MenuSelection3 from '../Menus/MenuSelection3';
+import MenuSelection2 from '../Menus/MenuSelection2';
 
     
     
@@ -50,8 +54,11 @@ import Thankyou from '../components/Thankyou';
         <Route path='/Mealplans' component={MealPlans}/>
         <Route path='/aboutus' component={Aboutus}/>
         <Route path='/checkout' component={Checkout}/>
+        <Route path='/checkout1' component={Checkout1}/>
+        <Route path='/checkout2' component={Checkout2}/>
         <Route path='/thankyou' component={Thankyou}/>
-      
+        <Route path='/menuselection2' component={MenuSelection2}/>
+        <Route path='/menuselection3' component={MenuSelection3}/>
         
         
         </Switch>
