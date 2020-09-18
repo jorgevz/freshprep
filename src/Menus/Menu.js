@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 
 
+
 class Menu extends React.Component {
 
   constructor(props) {
@@ -24,6 +25,8 @@ this.setState ({ meals: data.meals });
 
 }
 
+
+
 render() {
   
   return(  
@@ -37,7 +40,9 @@ render() {
  <br/>
  <br/>
  <br/>
+
  <h1 id= 'variety'>The varieties we offer !</h1>
+ <h5 id= 'variety'>Proceed to Meal plans above for your meal selections.</h5>
  <br/>
  <br/>
  {this.state.meals.map(meals => (

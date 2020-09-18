@@ -10,7 +10,7 @@ return(
 <br/>
 <h2 className>Thank you for your purchase</h2>
 <p>Your satisfaction is our best reward.</p>
-<img src={mission} class = "col-sm-12" height='570px'/>
+<img src={mission} class = "col-sm-12" height='580px'/>
 </div>
 )
 }

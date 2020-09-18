@@ -1,9 +1,39 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 
 
 
 
-function Checkout(){
+class Checkout extends React.Component{
+constructor(props){
+ super(props);
+this.state = {
+firstName: '',
+lastName: '',
+email:'',
+address:'',
+address2:'',
+country: '',
+state:'',
+zip:''
+}
+}
+
+
+
+handleSubmit = (e) => {
+e.preventDefault()
+}
+
+handleChange = (e) => {
+let {name,value} = e.target 
+this.setState({[name]: value})
+console.log(this.state)
+}
+
+
+
+render(){
 return(
     <div class="container">
     <br/>
@@ -17,77 +47,63 @@ return(
     <div class="row">
         <div class="col-md-4 order-md-2 mb-4">
             <h4 class="d-flex justify-content-between align-items-center mb-3">
-                <span class="text-muted">Your cart</span>
-                <span class="badge badge-secondary badge-pill">1</span>
+               
+                
             </h4>
            
+                <br/>
+                <br/>
                 
                 <li class="list-group-item d-flex justify-content-between">
-                    <span>Total (USD)</span>
+                    <span>Total 10.50 (USD)</span>
                     <strong></strong>
                     
                 </li>
             
-            <form class="card p-2">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Promo code"/>
-                    <div class="input-group-append">
-                        <button type="submit" class="btn btn-success">Redeem</button>
-                    </div>
-                </div>
-            </form>
         </div>
         <div class="col-md-8 order-md-1">
             <h4 class="mb-3">Billing address</h4>
-            <form class="needs-validation" novalidate="">
+            <form onSubmit={this.handleSubmit} class="needs-validation" novalidate="">
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="firstName">First name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required=""/>
+                        <input name='firstName' value={this.state.firstName} onChange={this.handleChange} type="text" class="form-control" id="firstName" placeholder=""  required=""/>
                         <div class="invalid-feedback"> Valid first name is required. </div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="lastName">Last name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required=""/>
+                        <input name='lastName' type="text" value={this.state.lastName} onChange={this.handleChange} class="form-control" id="lastName" placeholder="" required=""/>
                         <div class="invalid-feedback"> Valid last name is required. </div>
                     </div>
                 </div>
-                <div class="mb-3">
-                    <label for="username">Username</label>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">@</span>
-                        </div>
-                        <input type="text" class="form-control" id="username" placeholder="Username" required=""/>
-                        <div class="invalid-feedback" > Your username is required. </div>
-                    </div>
-                </div>
+               
+                    
                 <div class="mb-3">
                     <label for="email">Email <span class="text-muted">(Optional)</span></label>
-                    <input type="email" class="form-control" id="email" placeholder="you@example.com"/>
+                    <input name='email' type="email" value={this.state.email} onChange={this.handleChange} class="form-control" id="email" placeholder="you@example.com"/>
                     <div class="invalid-feedback"> Please enter a valid email address for shipping updates. </div>
                 </div>
                 <div class="mb-3">
                     <label for="address">Address</label>
-                    <input type="text" class="form-control" id="address" placeholder="1234 Main St" required=""/>
+                    <input name='address' type="text" value={this.state.address} onChange={this.handleChange} class="form-control" id="address" placeholder="1234 Main St" required=""/>
                     <div class="invalid-feedback"> Please enter your shipping address. </div>
                 </div>
                 <div class="mb-3">
                     <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-                    <input type="text" class="form-control" id="address2" placeholder="Apartment or suite"/>
+                    <input name='address2' type="text" value={this.state.address2} onChange={this.handleChange} class="form-control" id="address2" placeholder="Apartment or suite"/>
                 </div>
                 <div class="row">
                     <div class="col-md-5 mb-3">
                         <label for="country">Country</label>
                         <select class="custom-select d-block w-100" id="country" required="">
                             <option value="">Choose...</option>
-                            <option>United States</option>
+                            <option name='country' value={this.state.country} onChange={this.handleChange}>United States</option>
                         </select>
                         <div class="invalid-feedback"> Please select a valid country. </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <label for="state">State</label>
-                        <select class="custom-select d-block w-100" id="state" required="">
+                        <select name='state' value={this.state.state} onChange={this.handleChange} class="custom-select d-block w-100" id="state" required="">
                             <option value="">Choose...</option>
                             <option>California</option>
                           <option>Alabama</option> 
@@ -135,7 +151,7 @@ return(
                     </div>
                     <div class="col-md-3 mb-3">
                         <label for="zip">Zip</label>
-                        <input type="text" class="form-control" id="zip" placeholder="" required=""/>
+                        <input name='zip' value={this.state.zip} onChange={this.handleChange} type="text" class="form-control" id="zip" placeholder="" required=""/>
                         <div class="invalid-feedback"> Zip code required. </div>
                     </div>
                 </div>
@@ -144,18 +160,15 @@ return(
                     <input type="checkbox" class="custom-control-input" id="same-address"/>
                     <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
                 </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="save-info"/>
-                    <label class="custom-control-label" for="save-info">Save this information for next time</label>
-                </div>
+                
                 
                 <div class="d-block my-3">
                     <div class="custom-control custom-radio">
-                        <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required=""/>
+                        <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" required=""/>
                         <label class="custom-control-label" for="credit">Credit card</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required=""/>
+                        <input id="debit" name="paymentMethod" type="radio" class="custom-control-input"  required=""/>
                         <label class="custom-control-label" for="debit">Debit card</label>
                     </div>
                     <div class="custom-control custom-radio">
@@ -187,6 +200,19 @@ return(
                         <input type="text" class="form-control" id="cc-cvv" placeholder="" required=""/>
                         <div class="invalid-feedback"> Security code required </div>
                     </div>
+                   
+                <div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <Button href='/thankyou' type='submit' variant='primary'>Submit Payment</Button>
+                <br/>
+                <br/>
+                <br/>
+                </div>
                 </div>
                            
                   <form/>
@@ -199,7 +225,7 @@ return(
 
 
 
-)
+)}
 }
 
 export default Checkout;

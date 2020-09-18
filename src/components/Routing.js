@@ -13,7 +13,8 @@ import {
 import Aboutus from '../components/Aboutus';
 import Checkout from '../components/Checkout';
 import MenuSelection1 from '../Menus/MenuSelection1';
-import Thankyou from '../components/Thankyou'
+import Thankyou from '../components/Thankyou';
+
     
     
     
@@ -50,7 +51,7 @@ import Thankyou from '../components/Thankyou'
         <Route path='/aboutus' component={Aboutus}/>
         <Route path='/checkout' component={Checkout}/>
         <Route path='/thankyou' component={Thankyou}/>
-        
+      
         
         
         </Switch>
