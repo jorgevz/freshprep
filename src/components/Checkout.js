@@ -67,12 +67,12 @@ return(
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="firstName">First name</label>
-                        <input name='firstName' value={this.state.firstName} onChange={this.handleChange} type="text" class="form-control" id="firstName" placeholder=""  required=""/>
+                        <input ref='firstName' name='firstName' value={this.state.firstName} onChange={this.handleChange} type="text" class="form-control" id="firstName" placeholder=""  required=""/>
                         <div class="invalid-feedback"> Valid first name is required. </div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="lastName">Last name</label>
-                        <input name='lastName' type="text" value={this.state.lastName} onChange={this.handleChange} class="form-control" id="lastName" placeholder="" required=""/>
+                        <input ref='lastName' name='lastName' type="text" value={this.state.lastName} onChange={this.handleChange} class="form-control" id="lastName" placeholder="" required=""/>
                         <div class="invalid-feedback"> Valid last name is required. </div>
                     </div>
                 </div>
@@ -80,30 +80,30 @@ return(
                     
                 <div class="mb-3">
                     <label for="email">Email <span class="text-muted">(Optional)</span></label>
-                    <input name='email' type="email" value={this.state.email} onChange={this.handleChange} class="form-control" id="email" placeholder="you@example.com"/>
+                    <input ref='email' name='email' type="email" value={this.state.email} onChange={this.handleChange} class="form-control" id="email" placeholder="you@example.com"/>
                     <div class="invalid-feedback"> Please enter a valid email address for shipping updates. </div>
                 </div>
                 <div class="mb-3">
                     <label for="address">Address</label>
-                    <input name='address' type="text" value={this.state.address} onChange={this.handleChange} class="form-control" id="address" placeholder="1234 Main St" required=""/>
+                    <input ref='address' name='address' type="text" value={this.state.address} onChange={this.handleChange} class="form-control" id="address" placeholder="1234 Main St" required=""/>
                     <div class="invalid-feedback"> Please enter your shipping address. </div>
                 </div>
                 <div class="mb-3">
                     <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-                    <input name='address2' type="text" value={this.state.address2} onChange={this.handleChange} class="form-control" id="address2" placeholder="Apartment or suite"/>
+                    <input ref='address2' name='address2' type="text" value={this.state.address2} onChange={this.handleChange} class="form-control" id="address2" placeholder="Apartment or suite"/>
                 </div>
                 <div class="row">
                     <div class="col-md-5 mb-3">
                         <label for="country">Country</label>
                         <select class="custom-select d-block w-100" id="country" required="">
                             <option value="">Choose...</option>
-                            <option name='country' value={this.state.country} onChange={this.handleChange}>United States</option>
+                            <option ref='country' name='country' value={this.state.country} onChange={this.handleChange}>United States</option>
                         </select>
                         <div class="invalid-feedback"> Please select a valid country. </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <label for="state">State</label>
-                        <select name='state' value={this.state.state} onChange={this.handleChange} class="custom-select d-block w-100" id="state" required="">
+                        <select ref='state' name='state' value={this.state.state} onChange={this.handleChange} class="custom-select d-block w-100" id="state" required="">
                             <option value="">Choose...</option>
                             <option>California</option>
                           <option>Alabama</option> 
@@ -151,7 +151,7 @@ return(
                     </div>
                     <div class="col-md-3 mb-3">
                         <label for="zip">Zip</label>
-                        <input name='zip' value={this.state.zip} onChange={this.handleChange} type="text" class="form-control" id="zip" placeholder="" required=""/>
+                        <input ref='zip' name='zip' value={this.state.zip} onChange={this.handleChange} type="text" class="form-control" id="zip" placeholder="" required=""/>
                         <div class="invalid-feedback"> Zip code required. </div>
                     </div>
                 </div>

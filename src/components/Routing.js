@@ -48,7 +48,7 @@ import MenuSelection2 from '../Menus/MenuSelection2';
         
         <Switch>
         
-        <Route exact path='/home' component={Home}/>
+        <Route exact path='/' component={Home}/>
         <Route path='/menu' component={Menu}/>
         <Route path='/menuselection1' component={MenuSelection1}/>
         <Route path='/Mealplans' component={MealPlans}/>
