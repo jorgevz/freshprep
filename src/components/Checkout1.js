@@ -12,7 +12,7 @@ firstName: '',
 lastName: '',
 email:'',
 address:'',
-address2:'',
+addresstwo:'',
 country: '',
 state:'',
 zip:''
@@ -21,10 +21,17 @@ zip:''
 
 
 
-handleSubmit = (e) => {
-e.preventDefault()
-}
 
+handleSubmit = (e) => {
+    e.preventDefault()
+    axios.post('http://localhost:8080/users-management/v1/users', this.state)
+    .then(response => {
+        console.log(response)
+    } )
+    .catch(error => {
+        console.log(error)
+    })
+    }
 handleChange = (e) => {
 let {name,value} = e.target 
 this.setState({[name]: value})

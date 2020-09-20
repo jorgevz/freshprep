@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-
+import axios from 'axios';
 
 
 
@@ -12,7 +12,7 @@ firstName: '',
 lastName: '',
 email:'',
 address:'',
-address2:'',
+addresstwo:'',
 country: '',
 state:'',
 zip:''
@@ -23,6 +23,13 @@ zip:''
 
 handleSubmit = (e) => {
 e.preventDefault()
+axios.post('http://localhost:8080/users-management/v1/users', this.state)
+.then(response => {
+    console.log(response)
+} )
+.catch(error => {
+    console.log(error)
+})
 }
 
 handleChange = (e) => {
