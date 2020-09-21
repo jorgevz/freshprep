@@ -22,14 +22,15 @@ const res = await fetch(url);
 const data = await res.json();
 this.setState ({ meals: data.meals });
 
-
 }
 
 
 
 render() {
   
+
   return(  
+
     <div>
   
 
@@ -54,6 +55,8 @@ render() {
   {meals.strMeal}
   </div>
   <br/>
+
+
 
   <div>
   </div>

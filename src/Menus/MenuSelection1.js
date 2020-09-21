@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import Counter from '../components/Counter';
 
 
 
@@ -9,6 +10,7 @@ class MenuSelection1 extends React.Component {
   super(props)
   this.state = {
     meals: [],
+
    };
     
 }
@@ -25,11 +27,26 @@ this.setState ({ meals: data.meals });
 
 }
 
+increment() {
+  this.setState({
+    
+  });
+};
+
 render() {
   
   return(  
     <div>
-  
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+   
+    <div>
+    
+  <Counter/>
+    
+    </div>
 
  <div id='first-menu'>
  <br/>
@@ -163,7 +180,9 @@ render() {
   
   <br/>
 
-  
+<div>
+<Button variant='secondary' value="select" name='select' />
+</div>
 
 
 <br/>

@@ -18,7 +18,7 @@ import MenuSelection1 from '../Menus/MenuSelection1';
 import Thankyou from '../components/Thankyou';
 import MenuSelection3 from '../Menus/MenuSelection3';
 import MenuSelection2 from '../Menus/MenuSelection2';
-
+import Counter from '../components/Counter';
     
     
     
@@ -33,11 +33,11 @@ import MenuSelection2 from '../Menus/MenuSelection2';
      
         <Nav class="navbar fixed-top navbar-light bg-light">
   
-        <Link id='my-logo' to="/home">Freshprep🥕</Link>
+        <Link id='my-logo' to="/">Freshprep🥕</Link>
 
        <ul id='nav-bar'>
 
-       <li><Link to='/home'>Home</Link></li>
+       <li><Link to='/'>Home</Link></li>
        <li><Link to='/menu'>Menu</Link></li>
        <li> <Link to='/Mealplans'>Mealplans</Link></li>
         <li><Link to='/aboutus'>About us</Link></li>
@@ -59,7 +59,7 @@ import MenuSelection2 from '../Menus/MenuSelection2';
         <Route path='/thankyou' component={Thankyou}/>
         <Route path='/menuselection2' component={MenuSelection2}/>
         <Route path='/menuselection3' component={MenuSelection3}/>
-        
+        <Route path='/counter' component={Counter}/>
         
         </Switch>
         

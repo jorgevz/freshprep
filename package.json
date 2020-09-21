@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:8080/users-management/v1",
+  "proxy": "http://localhost:8080/users-management/v1/users",
   "eslint": {
     "extends": "react-app"
   },

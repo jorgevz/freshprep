@@ -12,7 +12,7 @@ firstName: '',
 lastName: '',
 email:'',
 address:'',
-addresstwo:'',
+address2:'',
 country: '',
 state:'',
 zip:''
@@ -26,7 +26,7 @@ e.preventDefault()
 axios.post('http://localhost:8080/users-management/v1/users', this.state)
 .then(response => {
     console.log(response)
-} )
+})
 .catch(error => {
     console.log(error)
 })
@@ -74,7 +74,7 @@ return(
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="firstName">First name</label>
-                        <input ref='firstName' name='firstName' value={this.state.firstName} onChange={this.handleChange} type="text" class="form-control" id="firstName" placeholder=""  required=""/>
+                        <input ref='firstName' name='firstName' onSubmit={this.handleSubmit} value={this.state.firstName} onChange={this.handleChange} type="text" class="form-control" id="firstName" placeholder=""  required=""/>
                         <div class="invalid-feedback"> Valid first name is required. </div>
                     </div>
                     <div class="col-md-6 mb-3">
@@ -102,9 +102,9 @@ return(
                 <div class="row">
                     <div class="col-md-5 mb-3">
                         <label for="country">Country</label>
-                        <select class="custom-select d-block w-100" id="country" required="">
-                            <option value="">Choose...</option>
-                            <option ref='country' name='country' value={this.state.country} onChange={this.handleChange}>United States</option>
+                        <select name='country' value={this.state.country} onChange={this.handleChange} class="custom-select d-block w-100" id="country" required="">
+                            <option >Choose...</option>
+                            <option ref='country' name='country'>United States</option>
                         </select>
                         <div class="invalid-feedback"> Please select a valid country. </div>
                     </div>
@@ -215,7 +215,7 @@ return(
                 <br/>
                 <br/>
                 <br/>
-                <Button href='/thankyou' type='submit' variant='primary'>Submit Payment</Button>
+                <Button onSubmit={this.handleSubmit} type='submit' variant='primary'>Submit Payment</Button>
                 <br/>
                 <br/>
                 <br/>

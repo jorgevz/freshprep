@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-
+import axios from 'axios';
 
 
 
@@ -12,7 +12,7 @@ firstName: '',
 lastName: '',
 email:'',
 address:'',
-addresstwo:'',
+address2:'',
 country: '',
 state:'',
 zip:''
@@ -102,9 +102,10 @@ return(
                 <div class="row">
                     <div class="col-md-5 mb-3">
                         <label for="country">Country</label>
-                        <select class="custom-select d-block w-100" id="country" required="">
+                        <select value={this.state.country} onChange={this.handleChange} name='country' class="custom-select d-block w-100" id="country" required="">
                             <option value="">Choose...</option>
-                            <option name='country' value={this.state.country} onChange={this.handleChange}>United States</option>
+                            <option>United States</option>
+                            <option>Canada</option>
                         </select>
                         <div class="invalid-feedback"> Please select a valid country. </div>
                     </div>
@@ -215,7 +216,7 @@ return(
                 <br/>
                 <br/>
                 <br/>
-                <Button href='/thankyou' type='submit' variant='primary'>Submit Payment</Button>
+                <Button onSubmit={this.handleSubmit}  type='submit' variant='primary'>Submit Payment</Button>
                 <br/>
                 <br/>
                 <br/>
