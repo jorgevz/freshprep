@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import axios from 'axios';
-
+import direct from './direct';
+import { Route, withRouter } from 'react-router-dom';
 
 
 class Checkout extends React.Component{
@@ -30,7 +31,11 @@ axios.post('http://localhost:8080/users-management/v1/users', this.state)
 .catch(error => {
     console.log(error)
 })
+this.props.history.push('/thankyou')
 }
+
+
+
 
 handleChange = (e) => {
 let {name,value} = e.target 
@@ -215,7 +220,7 @@ return(
                 <br/>
                 <br/>
                 <br/>
-                <Button onSubmit={this.handleSubmit} type='submit' variant='primary'>Submit Payment</Button>
+                <Button onSubmit={this.handleSubmit}  type='submit' variant='primary'>Submit Payment</Button>
                 <br/>
                 <br/>
                 <br/>

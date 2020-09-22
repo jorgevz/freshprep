@@ -8,7 +8,6 @@ import {
     import {Nav} from 'react-bootstrap';
   import Home from '../components/Home';
   import Menu from '../Menus/Menu';
-  import MenuSelection from '../Menus/MenuSelection1';
   import MealPlans from '../components/MealPlans';
 import Aboutus from '../components/Aboutus';
 import Checkout from '../components/Checkout';
