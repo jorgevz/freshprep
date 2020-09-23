@@ -66,7 +66,7 @@ increment=(e)=>{
   <div className='variety'>
 <h1>The fun part, choose your 6 Meals!</h1>
 <p>then click below to continue</p>
-<Button className='variety' href='/checkout' variant='info'>Proceed</Button>
+<Button className='variety' href='/checkout1' variant='info'>Proceed</Button>
 </div>
 
    <br/>
