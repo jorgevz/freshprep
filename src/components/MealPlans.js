@@ -15,12 +15,22 @@ return(
 <br/>
 <br/>
 <br/>
-
-
+<br/>
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
 <h1 class="display-4">Choose your weekly meal needs below</h1>
+<br/>
+<br/>
+
+
 <p class="lead">Here at FreshPrep your satisfaction is our best reward, we are obssed with customer satisfaction.</p>
 </div>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+
 
 <div class="container">
 <div class="card-deck mb-3 text-center">
@@ -53,11 +63,16 @@ return(
       <h4>health❤️</h4>
       <Button href="/MenuSelection3" variant="info" type="button" class="btn btn-lg btn-block btn-outline-info">Purchase</Button>
     </div>
+    
   </div>
 </div>
 
     </div>
+    
  </div> 
+
+
+
 )
 }
 

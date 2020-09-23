@@ -9,223 +9,110 @@ class MenuSelection2 extends React.Component {
   super(props)
   this.state = {
     meals: [],
+    count:0 
    };
     
 }
  
-// https://www.themealdb.com/api/json/v1/1/filter.php?i=noodles
-// https://www.themealdb.com/api/json/v1/1/filter.php?a=Mexican
-
-async componentDidMount(){
-const url = "https://www.themealdb.com/api/json/v1/1/filter.php?a=italian";
-const res = await fetch(url);
-const data = await res.json();
-this.setState ({ meals: data.meals });
 
 
-}
+increment=(e)=>{
 
-render() {
+  if (this.state.count >= 6) {
+    this.setState({count: 0});
+    
+  }else{
+    this.setState ({ count: this.state.count + 1 });
+  }
+  if (this.state.count >= 6) {
+    alert('You can only choose 6 meals')
+  }
+  }
   
-  return(  
-    <div>
   
-
- <div id='first-menu'>
- <br/>
- <br/>
- <br/>
- <br/>
- <br/>
- <br/>
- <h1 id= 'variety'>The fun part, choose your 6 Meals!</h1>
- <br/>
- <br/>
- 
- <div className= 'selection'>
   
- <select class="mdb-select md-form" searchable="Search here..">
-  <option value="" disabled selected>Choose your meal</option>
-  <option value="2" data-secondary-text="Production year: 2012">Budino Di Ricotta</option>
-  <option value="3" data-secondary-text="Production year: 2017">Chicken Alfredo Primavera</option>
-  <option value="3" data-secondary-text="Production year: 2015">Chilli prawn linguine</option>
-  <option value="3" data-secondary-text="Production year: 2019">Fettucine alfredo</option>
-  <option value="3" data-secondary-text="Production year: 2016">Lasagne</option>
-  <option value="3" data-secondary-text="Production year: 2016">Mediterranean Pasta Salad</option>
-  <option value="3" data-secondary-text="Production year: 2016">Osso Buco alla Milanese</option>
-  <option value="3" data-secondary-text="Production year: 2016">Pilchard puttanesca</option>
-  <option value="3" data-secondary-text="Production year: 2016">Pizza Express Margherita</option>
-  <option value="3" data-secondary-text="Production year: 2016">Ribollita</option>
-  <option value="3" data-secondary-text="Production year: 2016">Salmon Prawn Risotto</option>
-  <option value="3" data-secondary-text="Production year: 2016">Spaghetti alla Carbonara</option>
-  <option value="3" data-secondary-text="Production year: 2016">Spaghetti Bolognes</option>
-  <option value="3" data-secondary-text="Production year: 2016">Spicy Arrabiata Penne</option>
-  <option value="3" data-secondary-text="Production year: 2016">Squash linguinei</option>
-  <option value="3" data-secondary-text="Production year: 2016">Vegan Lasagna</option>
-  <option value="3" data-secondary-text="Production year: 2016">Venetian Duck Ragu</option>
- 
-
-</select>
-
+  async componentDidMount(){
+  const url = "https://www.themealdb.com/api/json/v1/1/filter.php?a=italian";
+  const res = await fetch(url);
+  const data = await res.json();
+  this.setState ({ meals: data.meals });
   
- <select class="mdb-select md-form" searchable="Search here..">
-  <option value="" disabled selected>Choose your meal</option>
-  <option value="2" data-secondary-text="Production year: 2012">Budino Di Ricotta</option>
-  <option value="3" data-secondary-text="Production year: 2017">Chicken Alfredo Primavera</option>
-  <option value="3" data-secondary-text="Production year: 2015">Chilli prawn linguine</option>
-  <option value="3" data-secondary-text="Production year: 2019">Fettucine alfredo</option>
-  <option value="3" data-secondary-text="Production year: 2016">Lasagne</option>
-  <option value="3" data-secondary-text="Production year: 2016">Mediterranean Pasta Salad</option>
-  <option value="3" data-secondary-text="Production year: 2016">Osso Buco alla Milanese</option>
-  <option value="3" data-secondary-text="Production year: 2016">Pilchard puttanesca</option>
-  <option value="3" data-secondary-text="Production year: 2016">Pizza Express Margherita</option>
-  <option value="3" data-secondary-text="Production year: 2016">Ribollita</option>
-  <option value="3" data-secondary-text="Production year: 2016">Salmon Prawn Risotto</option>
-  <option value="3" data-secondary-text="Production year: 2016">Spaghetti alla Carbonara</option>
-  <option value="3" data-secondary-text="Production year: 2016">Spaghetti Bolognes</option>
-  <option value="3" data-secondary-text="Production year: 2016">Spicy Arrabiata Penne</option>
-  <option value="3" data-secondary-text="Production year: 2016">Squash linguinei</option>
-  <option value="3" data-secondary-text="Production year: 2016">Vegan Lasagna</option>
-  <option value="3" data-secondary-text="Production year: 2016">Venetian Duck Ragu</option>
- 
-
-</select>
-
   
- <select class="mdb-select md-form" searchable="Search here..">
-  <option value="" disabled selected>Choose your meal</option>
-  <option value="2" data-secondary-text="Production year: 2012">Budino Di Ricotta</option>
-  <option value="3" data-secondary-text="Production year: 2017">Chicken Alfredo Primavera</option>
-  <option value="3" data-secondary-text="Production year: 2015">Chilli prawn linguine</option>
-  <option value="3" data-secondary-text="Production year: 2019">Fettucine alfredo</option>
-  <option value="3" data-secondary-text="Production year: 2016">Lasagne</option>
-  <option value="3" data-secondary-text="Production year: 2016">Mediterranean Pasta Salad</option>
-  <option value="3" data-secondary-text="Production year: 2016">Osso Buco alla Milanese</option>
-  <option value="3" data-secondary-text="Production year: 2016">Pilchard puttanesca</option>
-  <option value="3" data-secondary-text="Production year: 2016">Pizza Express Margherita</option>
-  <option value="3" data-secondary-text="Production year: 2016">Ribollita</option>
-  <option value="3" data-secondary-text="Production year: 2016">Salmon Prawn Risotto</option>
-  <option value="3" data-secondary-text="Production year: 2016">Spaghetti alla Carbonara</option>
-  <option value="3" data-secondary-text="Production year: 2016">Spaghetti Bolognes</option>
-  <option value="3" data-secondary-text="Production year: 2016">Spicy Arrabiata Penne</option>
-  <option value="3" data-secondary-text="Production year: 2016">Squash linguinei</option>
-  <option value="3" data-secondary-text="Production year: 2016">Vegan Lasagna</option>
-  <option value="3" data-secondary-text="Production year: 2016">Venetian Duck Ragu</option>
- 
-
-</select>
-
+  }
   
- <select class="mdb-select md-form" searchable="Search here..">
-  <option value="" disabled selected>Choose your meal</option>
-  <option value="2" data-secondary-text="Production year: 2012">Budino Di Ricotta</option>
-  <option value="3" data-secondary-text="Production year: 2017">Chicken Alfredo Primavera</option>
-  <option value="3" data-secondary-text="Production year: 2015">Chilli prawn linguine</option>
-  <option value="3" data-secondary-text="Production year: 2019">Fettucine alfredo</option>
-  <option value="3" data-secondary-text="Production year: 2016">Lasagne</option>
-  <option value="3" data-secondary-text="Production year: 2016">Mediterranean Pasta Salad</option>
-  <option value="3" data-secondary-text="Production year: 2016">Osso Buco alla Milanese</option>
-  <option value="3" data-secondary-text="Production year: 2016">Pilchard puttanesca</option>
-  <option value="3" data-secondary-text="Production year: 2016">Pizza Express Margherita</option>
-  <option value="3" data-secondary-text="Production year: 2016">Ribollita</option>
-  <option value="3" data-secondary-text="Production year: 2016">Salmon Prawn Risotto</option>
-  <option value="3" data-secondary-text="Production year: 2016">Spaghetti alla Carbonara</option>
-  <option value="3" data-secondary-text="Production year: 2016">Spaghetti Bolognes</option>
-  <option value="3" data-secondary-text="Production year: 2016">Spicy Arrabiata Penne</option>
-  <option value="3" data-secondary-text="Production year: 2016">Squash linguinei</option>
-  <option value="3" data-secondary-text="Production year: 2016">Vegan Lasagna</option>
-  <option value="3" data-secondary-text="Production year: 2016">Venetian Duck Ragu</option>
- 
-
- 
-
-</select>
-
-<select class="mdb-select md-form" searchable="Search here..">
-  <option value="" disabled selected>Choose your meal</option>
-  <option value="2" data-secondary-text="Production year: 2012">Budino Di Ricotta</option>
-  <option value="3" data-secondary-text="Production year: 2017">Chicken Alfredo Primavera</option>
-  <option value="3" data-secondary-text="Production year: 2015">Chilli prawn linguine</option>
-  <option value="3" data-secondary-text="Production year: 2019">Fettucine alfredo</option>
-  <option value="3" data-secondary-text="Production year: 2016">Lasagne</option>
-  <option value="3" data-secondary-text="Production year: 2016">Mediterranean Pasta Salad</option>
-  <option value="3" data-secondary-text="Production year: 2016">Osso Buco alla Milanese</option>
-  <option value="3" data-secondary-text="Production year: 2016">Pilchard puttanesca</option>
-  <option value="3" data-secondary-text="Production year: 2016">Pizza Express Margherita</option>
-  <option value="3" data-secondary-text="Production year: 2016">Ribollita</option>
-  <option value="3" data-secondary-text="Production year: 2016">Salmon Prawn Risotto</option>
-  <option value="3" data-secondary-text="Production year: 2016">Spaghetti alla Carbonara</option>
-  <option value="3" data-secondary-text="Production year: 2016">Spaghetti Bolognes</option>
-  <option value="3" data-secondary-text="Production year: 2016">Spicy Arrabiata Penne</option>
-  <option value="3" data-secondary-text="Production year: 2016">Squash linguinei</option>
-  <option value="3" data-secondary-text="Production year: 2016">Vegan Lasagna</option>
-  <option value="3" data-secondary-text="Production year: 2016">Venetian Duck Ragu</option>
- 
-
-</select>
-
-<select class="mdb-select md-form" searchable="Search here..">
-  <option value="" disabled selected>Choose your meal</option>
-  <option value="2" data-secondary-text="Production year: 2012">Budino Di Ricotta</option>
-  <option value="3" data-secondary-text="Production year: 2017">Chicken Alfredo Primavera</option>
-  <option value="3" data-secondary-text="Production year: 2015">Chilli prawn linguine</option>
-  <option value="3" data-secondary-text="Production year: 2019">Fettucine alfredo</option>
-  <option value="3" data-secondary-text="Production year: 2016">Lasagne</option>
-  <option value="3" data-secondary-text="Production year: 2016">Mediterranean Pasta Salad</option>
-  <option value="3" data-secondary-text="Production year: 2016">Osso Buco alla Milanese</option>
-  <option value="3" data-secondary-text="Production year: 2016">Pilchard puttanesca</option>
-  <option value="3" data-secondary-text="Production year: 2016">Pizza Express Margherita</option>
-  <option value="3" data-secondary-text="Production year: 2016">Ribollita</option>
-  <option value="3" data-secondary-text="Production year: 2016">Salmon Prawn Risotto</option>
-  <option value="3" data-secondary-text="Production year: 2016">Spaghetti alla Carbonara</option>
-  <option value="3" data-secondary-text="Production year: 2016">Spaghetti Bolognes</option>
-  <option value="3" data-secondary-text="Production year: 2016">Spicy Arrabiata Penne</option>
-  <option value="3" data-secondary-text="Production year: 2016">Squash linguinei</option>
-  <option value="3" data-secondary-text="Production year: 2016">Vegan Lasagna</option>
-  <option value="3" data-secondary-text="Production year: 2016">Venetian Duck Ragu</option>
- 
-
-</select>
-<br/>
-<br/>
-<br/>
-
-<Button id='button-select' href='/checkout1' variant='info'>Proceed</Button>
-
-
+  
+  
+  render() {
+  
+    return(  
+      <div>
+      <br/>
+      <br/>
+    
+     
+      <div>
+      
+    
+      
+      </div>
+  
+   <div id='first-menu'>
+   <br/>
+   <br/>
+   <br/>
+   <br/>
+  <br/>
+   
+  <div className='variety'>
+<h1>The fun part, choose your 6 Meals!</h1>
+<Button className='variety' href='/checkout' variant='info'>Proceed</Button>
 </div>
 
- <br/>
- <br/>
- {this.state.meals.map(meals => (
-  
-
-  <div id='whole-menu'>
-  
-
-
-  
- <h3>{meals.strMeal}</h3> 
-  
+   <br/>
   <br/>
-
+  <br/>
   
-
-
-<br/>
+  </div>
+  
+  <div className='menu-counter'>
+<p>Meals Selected</p>
+<small>🥗🍲</small>
+<h2>{this.state.count}</h2>
+</div>
+  
+   <br/>
+   <br/>
+   {this.state.meals.map(meals => (
+    
+  
+    <div id='whole-menu'>
+    
+  
+  
+    
+   <h3>{meals.strMeal}</h3> 
+    
+    <br/>
+  
+  
+  
   <div>
-  <img height='300px' width='300px' src={meals.strMealThumb}/>
+  <Button variant='info' name="select" onClick={this.increment}>Select</Button>
   </div>
+  
+  
   <br/>
-  <br/>
-  <br/>
-  </div>
-
- ))}
-  </div>
-  </div>
-  )
-}}
-
-
+    <div>
+    <img id='api-imgs' height='300px' width='300px' src={meals.strMealThumb}/>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    </div>
+  
+   ))}
+    </div>
+  
+    )
+  }}
 export default MenuSelection2;  

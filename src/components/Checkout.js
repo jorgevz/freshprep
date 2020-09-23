@@ -67,7 +67,7 @@ return(
                 <br/>
                 
                 <li class="list-group-item d-flex justify-content-between">
-                    <span>Total 10.50 (USD)</span>
+                    <span>Total $42 (USD)</span>
                     <strong></strong>
                     
                 </li>

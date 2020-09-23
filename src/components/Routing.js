@@ -5,7 +5,7 @@ import {
     Route,
     Link,
     } from 'react-router-dom'
-    import {Nav} from 'react-bootstrap';
+    import {Button, Nav} from 'react-bootstrap';
   import Home from '../components/Home';
   import Menu from '../Menus/Menu';
   import MealPlans from '../components/MealPlans';
@@ -44,7 +44,9 @@ import Counter from '../components/Counter';
       </ul>
 
         </Nav>
+
         
+
         <Switch>
         
         <Route exact path='/' component={Home}/>
@@ -62,7 +64,25 @@ import Counter from '../components/Counter';
         
         </Switch>
         
+
+       
+      
+      </div>
+
+      <footer id="footer" class="py-4 bg-dark text-white-50">
+        <div class=" text-center">
+
+          <small>Copyright &copy; </small>
+
+          <small>Freshprep🥕</small>
+          
+        
         </div>
+
+        
+      </footer>
+
+       
       
        </Router> 
       

@@ -16,14 +16,14 @@ line-height: normal;
 }
 
 #nav-bar a:hover {
-background-color: black;
+background-color: grey;
 text-decoration: none;
 color: white;
 text-align: center;
-padding: 14px 16px;
+padding: 25px 20px;
 text-decoration: none;
 font-size: 17px;
-overflow: hidden;
+overflow: scroll;
 }
 
 #my-logo{
@@ -87,6 +87,7 @@ background-color: white;
     font-size: x-large;
     background-color: #f8f7f4;
     color: black;
+    height: auto;
 }
 
 #jumbotron1{
@@ -136,7 +137,7 @@ animation: second-article 2s ease-in-out 0s normal ;
     }
     }
    
-#variety{
+.variety{
 text-align: center;
 font-family: Noto Sans JP;
 }
@@ -163,6 +164,19 @@ margin: 30px;
 margin-left: 250px;
 }
 
-#button-select{
-    margin-left: 400px;
+.button-select{
+margin-left: 675px;
+}
+#api-imgs{
+border-radius: 10%;
+}
+.menu-counter{
+position: fixed;
+text-align: center;
+height: 120px;
+width: 75px;
+background-color:#f8f7f4;
+font-family: Noto Sans JP;
+font-weight: bold;
+border-radius: 7%;
 }

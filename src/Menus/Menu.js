@@ -42,8 +42,8 @@ render() {
  <br/>
  <br/>
 
- <h1 id= 'variety'>The varieties we offer !</h1>
- <h5 id= 'variety'>Proceed to Meal plans above for your meal selections.</h5>
+ <h1 className='variety'>The varieties we offer !</h1>
+ <h5 className= 'variety'>Proceed to Meal plans above for your meal selections.</h5>
  <br/>
  <br/>
  {this.state.meals.map(meals => (
@@ -62,7 +62,7 @@ render() {
   </div>
 <br/>
   <div>
-  <img height='300px' width='300px' src={meals.strMealThumb}/>
+  <img id='api-imgs' height='300px' width='300px' src={meals.strMealThumb}/>
   </div>
   <br/>
   <br/>

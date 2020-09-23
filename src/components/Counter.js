@@ -1,36 +1,35 @@
 import React from 'react';
 import {Button} from 'react-bootstrap';
 
-class Counter extends React.Component{
-    constructor(props) {
-        super(props);
-        this.state = {
-          count: 0
-        }
-    }
+const { useState } = React
 
-    increment() {
-    
-        };
-    
-    
+const Counter = ({ increment, onClickFunction }) => {
+  const handleClick = () => {
+    onClickFunction(increment)
+  }
+  return <button onClick={handleClick}>+{increment}</button>
+}
 
+const App = () => {
+  const [count, setCount] = useState(0)
 
+  const incrementCount = increment => {
+    setCount(count + increment)
+  }
+ 
+  if (App > 4) {
+      alert('more than four')
+  }
 
-
-render(){
-
-return(
+  return (
     <div>
-    <br/>
-    <br/>
-    <Button onClick={this.increment}>add</Button>
-    <h2>{this.state.count}</h2>
+      <Button increment={1} onClickFunction={incrementCount} />
+      
+      <span>{count}</span>
     </div>
-)
+  )
+}
 
 
-}
-    
-}
+
 export default Counter;
