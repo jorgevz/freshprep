@@ -33,7 +33,21 @@ if (this.state.count >= 4) {
 }
 }
 
+proceed=()=>{
+if (this.state.count < 4) {
+  alert('Finish Selection')
+}
 
+if (this.state.count < 4) {
+  this.props.history.push('/menuselection1')
+
+}
+
+if (this.state.count === 4 ){
+this.props.history.push('/checkout')
+}
+
+}
 
 async componentDidMount(){
 const url = "https://www.themealdb.com/api/json/v1/1/filter.php?a=italian";
@@ -70,7 +84,8 @@ render() {
 <div className='variety'>
 <h1>The fun part, choose your 4 Meals!</h1>
 <p>then click below to continue</p>
-<Button className='variety' href='/checkout' variant='info'>Proceed</Button>
+
+<Button onClick={this.proceed} className='variety'  variant='info'>Proceed</Button>
 </div>
 
  <br/>

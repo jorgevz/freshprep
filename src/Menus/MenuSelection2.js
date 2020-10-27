@@ -27,8 +27,24 @@ increment=(e)=>{
   if (this.state.count >= 6) {
     alert('You can only choose 6 meals')
   }
-  }
   
+  }
+
+proceed=()=>{
+if (this.state.count < 6) {
+      alert('Finish Selection')
+}
+    
+if (this.state.count < 6) {
+this.props.history.push('/menuselection2')
+    
+}
+    
+if (this.state.count === 6 ){
+this.props.history.push('/checkout1')
+}
+    
+}
   
   
   async componentDidMount(){
@@ -66,7 +82,7 @@ increment=(e)=>{
   <div className='variety'>
 <h1>The fun part, choose your 6 Meals!</h1>
 <p>then click below to continue</p>
-<Button className='variety' href='/checkout1' variant='info'>Proceed</Button>
+<Button className='variety' onClick={this.proceed} variant='info'>Proceed</Button>
 </div>
 
    <br/>
